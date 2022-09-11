@@ -1,0 +1,231 @@
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.slider .parallax-slider .caption h1 {
+		font-size: 40px;
+	}
+	.about-image {
+		text-align: center;
+		margin-top: 30px;
+	}
+	.slider .parallax-slider .caption h2{
+		font-size: 23px;
+    	line-height: 26px;
+	}
+	
+	#navbarDefault {
+		width: 100%;
+		height: 320px;
+		overflow-y: auto;
+		background: #f1f1f1;
+		z-index: 900;
+		margin-top: 10px;
+	}
+	.slider .parallax-slider .swiper-slide{
+		height: 100vh;
+	}
+	.download-buttons-wrap{
+	  display: block;
+	  align-items: center;
+	  vertical-align: middle;
+	  justify-content: center;
+	 }
+	.download-buttons{
+	  margin-bottom: 10px;
+	}
+	.slider .parallax-slider .caption{
+		margin-top: 100px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.slider .parallax-slider .caption{
+		margin-top: 100px;
+	}
+	.download-buttons-wrap{
+	  display: block;
+	  align-items: center;
+	  vertical-align: middle;
+	  justify-content: center;
+	 }
+	.download-buttons{
+	  margin-bottom: 10px;
+	}
+	.section-title h2 {
+		font-size: 30px;
+	}
+	.header-navber-area .nav-top-bar {
+		display: none;
+	}
+	#navbarDefault {
+		width: 100%;
+		height: 256px;
+		
+		background: #f1f1f1;
+		z-index: 900;
+	}
+	.slider .parallax-slider .swiper-slide{
+		height: 100vh;
+	}
+	/* slider */
+	.slider .parallax-slider .caption h1 {
+		font-size: 50px;
+		line-height: 35px;
+	}
+	.slider .control-text .swiper-nav-ctrl {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.about-content h2{
+		font-size: 30px;
+	}
+	.about-image {
+		text-align: center;
+		margin-top: 30px;
+	}
+	.footer-area {
+		text-align: center;
+	}
+	.footer-area .footer-link ul {
+		margin-top: 10px;
+		text-align: center;
+		list-style-type: none;
+	}
+}
+
+
+@media only screen and (max-width: 479px) {
+	.section-title h2 {
+		font-size: 30px;
+	}
+	.navbar-nav {
+		margin-top: 15px;
+	}
+	.navbar-b .nav-item {
+		margin-bottom: 0px;
+	}
+	.navbar-b .nav-item:last-child {
+		margin-bottom: 0px;
+	}
+	/* slider */
+	.slider .parallax-slider .caption h1 {
+		font-size: 45px;
+	}
+	.slider .control-text .swiper-nav-ctrl {
+		display: none;
+	}
+	.about-content h2{
+		font-size: 30px;
+	}
+	.about-image {
+		text-align: center;
+		margin-top: 30px;
+	}
+	.footer-area {
+		text-align: center;
+	}
+	.footer-area .footer-link ul {
+		margin-top: 10px;
+		text-align: center;
+		list-style-type: none;
+	}
+	.banner-project-completed .single-project{
+		background: #f3b511;
+	    display: flex;
+	    vertical-align: middle;
+	    align-items: center;
+	}
+
+}
+
+
+@media screen and (max-width: 320px) and (min-width: 0px){
+	.section-title h2 {
+		font-size: 30px;
+	}
+	.navbar-nav {
+		margin-top: 15px;
+	}
+	.navbar-b .nav-item {
+		margin-bottom: 10px;
+	}
+	.navbar-b .nav-item:last-child {
+		margin-bottom: 0px;
+	}
+	.slider .parallax-slider .caption {
+		padding-top: 35px;
+	}
+	.slider .parallax-slider .caption h1 {
+		font-size: 30px;
+	}
+	.slider .control-text .swiper-nav-ctrl {
+		display: none;
+	}
+	.about-content h2{
+		font-size: 28px;
+	}
+	.about-image {
+		text-align: center;
+		margin-top: 30px;
+	}
+	.footer-area {
+		text-align: center;
+	}
+	.footer-area .footer-link ul {
+		margin-top: 10px;
+		text-align: center;
+		list-style-type: none;
+	}
+	
+}
+
+@media only screen and (min-width: 0px) and (max-width: 991px) {
+	.navbar-b{
+		background-color: transparent;
+	}
+	.top-icon{
+		color: #333;
+	}
+	.d-desktop{
+		display: none;
+	}
+	.d-mobile{
+		display: block;
+		font-size: 14px;
+		text-align: center;
+		position: fixed;
+		width: 100%;
+		top: 77px;
+	}
+	.svg-shape-bottom .bottom-shape{
+		height: 17%;
+	}
+	.navbar-nav{
+		top: unset;
+		background: none;
+		z-index: 90;
+	}
+	.navbar-b.navbar-reduce .show > .nav-link, .navbar-b.navbar-reduce .active > .nav-link, .navbar-b.navbar-reduce .nav-link.show, .navbar-b.navbar-reduce .nav-link.active{
+		/* color: #673ab7; */
+	}
+	.navbar-b.navbar-trans .nav-link, .navbar-b.navbar-reduce .nav-link{
+        color: #333;
+	}
+	.slider .parallax-slider .caption h1 {
+		font-size: 40px;
+	}
+	.about-image {
+		text-align: center;
+		margin-top: 30px;
+	}
+	.slider .parallax-slider .caption h2{
+		font-size: 23px;
+    	line-height: 26px;
+	}
+}
+@media only screen and (min-width: 992px) {
+	.d-desktop{
+		display: block;
+	}
+	.d-mobile{
+		display: none;
+	}
+}
