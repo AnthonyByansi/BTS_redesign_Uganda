@@ -15,8 +15,6 @@
     <!-- Custom styles -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" type="image/png" href="./assets/img/logo.png">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -73,14 +71,15 @@
 
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
-            <div class="topnav" id="myTopnav">
+            <div class="container-fluid">
+                <!-- Navbar brand -->
                 <a class="navbar-brand nav-link" target="_blank" href="https://www.youtube.com/channel/UCkiqVy1cInBk3v5_7KXQX0A">
                     <strong>BTS Army Uganda</strong>
                 </a>
                 <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
           </button>
-                <div class="container-fluid collapse navbar-collapse" id="navbarExample01">
+                <div class="collapse navbar-collapse" id="navbarExample01">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item active">
                             <a class="nav-link" aria-current="page" href="#">Home</a>
@@ -113,13 +112,10 @@
                     </ul>
                 </div>
             </div>
-        
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                  <i class="fa fa-bars"></i>
-                </a>
-              </div>
-            </nav>
-           
+        </nav>
+        <!-- Navbar -->
+
+        <!-- Carousel wrapper -->
         <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -446,17 +442,6 @@
         </div>
     </main>
     <!--Main layout-->
-
-    <script>
-        function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-    </script>
 
     <!--Footer-->
     <footer class="bg-light text-lg-start">
