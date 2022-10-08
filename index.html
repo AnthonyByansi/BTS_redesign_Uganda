@@ -70,6 +70,45 @@
         </style>
 
         <!-- Navbar -->
+        <section class="navigation">
+            <div class="nav-container">
+              <div class="brand">
+                <a class="navbar-brand nav-link" target="_blank" href="https://www.youtube.com/channel/UCkiqVy1cInBk3v5_7KXQX0A">
+                    <strong>BTS Army Uganda</strong>
+                </a>
+              </div>
+              <nav>
+                <div class="nav-mobile"><a id="navbar-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
+                  <li>
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="projects.html" target="_blank">Projects</a>
+                  </li>
+                  <ul class="navbar-nav d-flex flex-row">
+                    <!-- Icons -->
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="https://www.youtube.com/channel/UCkiqVy1cInBk3v5_7KXQX0A" rel="nofollow" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="https://www.facebook.com/groups/797491847676106/" rel="nofollow" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="https://twitter.com/BTSARMYUGANDA" rel="nofollow" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+                  
+                </ul>
+              </nav>
+            </div>
+          </section>
         <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
             <div class="container-fluid">
                 <!-- Navbar brand -->
@@ -483,6 +522,39 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Custom scripts -->
     <script type="text/javascript" src="js/script.js"></script>
+    <script>
+        (function($) { 
+  $(function() { 
+
+    //  open and close nav 
+    $('#navbar-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+
+
+    // Hamburger toggle
+    $('#navbar-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+
+
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.navbar-dropdown').slideToggle("slow");
+
+      // Close dropdown when select another dropdown
+      $('.navbar-dropdown').not($(this).siblings()).hide("slow");
+      e.stopPropagation();
+    });
+
+
+    // Click outside the dropdown will remove the dropdown class
+    $('html').click(function() {
+      $('.navbar-dropdown').hide();
+    });
+  }); 
+})(jQuery); 
+    </script>
 </body>
 
 </html>
