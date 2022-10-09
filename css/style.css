@@ -1,145 +1,187 @@
-.navigation {
-    height: 55px;
-    background: linear-gradient(45deg, #652284, #652284);
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+    
+    
+    background-color: "#808080"
 }
-.brand {
-    position: absolute;
-    padding-left: 20px;
-    float: left;
-    line-height: 55px;
-    text-transform: uppercase;
-    font-size: 1.4em;
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+
+  --primary-purple: #6200EE;
+
+  --secondary-purple: #4B00D1;
+
+  --secondary-teal: #03DAC5;
+
 }
-.brand a, .brand a:visited {
-    color: #ffffff;
-    text-decoration: none;
+
+a {
+
+  text-decoration: none;
+
+  color: white;
+
 }
-.nav-container {
-    max-width: 1000px;
-    margin: 0 auto;
+
+ul {
+
+  list-style-type: none;
+
 }
-nav {
-    float: right;
+
+.top-menu {
+
+  display: flex;
+
+  flex-direction: column;
+
+  background: var(--primary-purple);
+
 }
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+
+.icons {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  background: var(--primary-purple);
+
+  color: white;
+
 }
-nav ul li {
-    float: left;
-    position: relative;
+
+.icon, .text {
+
+  cursor: pointer;
+
+  padding: 15px;
+
 }
-nav ul li a,nav ul li a:visited {
-    display: block;
-    padding: 0 20px;
-    line-height: 55px;
-    color: #fff;
-    background: #262626 ;
-    text-decoration: none;
+
+.text {
+
+  text-transform: capitalize;
+
 }
-nav ul li a{
-    background: transparent;
-    color: #FFF;
+
+.home {
+
+  background: var(--secondary-teal);
+
 }
-nav ul li a:hover, nav ul li a:visited:hover {
-    background: #2581DC;
-    color: #ffffff;
+
+/*Hide home text by default*/
+
+.home .text {
+
+  display: none;
+
 }
-.navbar-dropdown li a{
-    background: #2581DC;
+
+.active, #selector:hover {
+
+  background: var(--secondary-purple);
+
 }
-nav ul li a:not(:only-child):after, nav ul li a:visited:not(:only-child):after {
-    padding-left: 4px;
-    content: ' \025BE';
+
+.links {
+
+  display: flex;
+
+  flex-direction: column;
+
+  background: var(--secondary-purple);
+
 }
-nav ul li ul li {
-    min-width: 190px;
+
+.links li {
+
+  cursor: pointer;
+
+  padding: 15px;
+
+  text-transform: capitalize;
+
+  border-bottom: 1px solid var(--secondary-teal);
+
 }
-nav ul li ul li a {
-    padding: 15px;
-    line-height: 20px;
+
+.hidden {
+
+  display: none;
+
 }
-.navbar-dropdown {
-    position: absolute;
+
+@media only screen and (min-width: 600px) {
+
+  .top-menu {
+
+    flex-direction: row;
+
+    align-items: baseline;
+
+  }
+
+  
+
+  .links {
+
+    display: flex;
+
+    flex-direction: row;
+
+  }
+
+  
+
+  .links li {
+
+    border: none;
+
+    background: var(--primary-purple);
+
+  }
+
+  
+
+  .links li:hover {
+
+    background: var(--secondary-purple);
+
+  }
+
+  
+
+  .icon {
+
     display: none;
-    z-index: 1;
-    background: #fff;
-    box-shadow: 0 0 35px 0 rgba(0,0,0,0.25);
-}
-/* Mobile navigation */
-.nav-mobile {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: transparent;
-    height: 55px;
-    width: 70px;
-}
-@media only screen and (max-width: 800px) {
-    .nav-mobile {
-        display: block;
-   }
-    nav {
-        width: 100%;
-        padding: 55px 0 15px;
-   }
-    nav ul {
-        display: none;
-   }
-    nav ul li {
-        float: none;
-   }
-    nav ul li a {
-        padding: 15px;
-        line-height: 20px;
-        background: #262626;
-   }
-    nav ul li ul li a {
-        padding-left: 30px;
-   }
-    .navbar-dropdown {
-        position: static;
-}
-@media screen and (min-width:800px) {
-    .nav-list {
-        display: block !important;
-   }
-}
-#navbar-toggle {
-    position: absolute;
-    left: 18px;
-    top: 15px;
-    cursor: pointer;
-    padding: 10px 35px 16px 0px;
-}
-#navbar-toggle span, #navbar-toggle span:before, #navbar-toggle span:after {
-    cursor: pointer;
-    border-radius: 1px;
-    height: 3px;
-    width: 30px;
-    background: #ffffff;
-    position: absolute;
+
+  }
+
+  
+
+  .home .text {
+
     display: block;
-    content: '';
-    transition: all 300ms ease-in-out;
-}
-#navbar-toggle span:before {
-    top: -10px;
-}
-#navbar-toggle span:after {
-    bottom: -10px;
-}
-#navbar-toggle.active span {
-    background-color: transparent;
-}
-#navbar-toggle.active span:before, #navbar-toggle.active span:after {
-    top: 0;
-}
-#navbar-toggle.active span:before {
-    transform: rotate(45deg);
-}
-#navbar-toggle.active span:after {
-    transform: rotate(-45deg);
+
+  }
+
 }
